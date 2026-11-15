@@ -1,0 +1,11 @@
+{
+  "_comment": "Written by hand, independent of src/permissions.ts, so the eval catches a change to either one.",
+  "profiles": {
+    "front_desk / read+write": ["search_patients", "find_available_slots", "get_provider_schedule", "get_appointment", "list_patient_appointments", "book_appointment", "reschedule_appointment", "cancel_appointment"],
+    "front_desk / read": ["search_patients", "find_available_slots", "get_provider_schedule", "get_appointment", "list_patient_appointments"],
+    "clinician / read+write": ["search_patients", "find_available_slots", "get_provider_schedule", "get_appointment", "list_patient_appointments", "add_previsit_note"],
+    "clinician / read": ["search_patients", "find_available_slots", "get_provider_schedule", "get_appointment", "list_patient_appointments"],
+    "admin / read+write": ["search_patients", "find_available_slots", "get_provider_schedule", "get_appointment", "list_patient_appointments", "book_appointment", "reschedule_appointment", "cancel_appointment", "get_audit_log"],
+    "admin / read": ["search_patients", "find_available_slots", "get_provider_schedule", "get_appointment", "list_patient_appointments", "get_audit_log"]
+  }
+}

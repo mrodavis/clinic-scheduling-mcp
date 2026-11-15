@@ -1,0 +1,31 @@
+{
+  "name": "clinic-scheduling-mcp",
+  "version": "1.0.0",
+  "description": "A remote MCP server for a (fictional) medical clinic's scheduling: OAuth-protected, role-scoped tools that share one permission-checked, audited service layer with the REST API. Synthetic data only.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "token": "tsx scripts/dev-token.ts",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "eval": "tsx evals/run.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.8",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "hono": "^4.13.18",
+    "jose": "^6.2.17",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^1.8.0",
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}
